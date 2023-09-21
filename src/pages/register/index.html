@@ -3,6 +3,7 @@
   <head>
     <title>Wallet App - Register</title>
     <link rel="stylesheet" href="../../../styles.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="auth-container">
@@ -14,23 +15,27 @@
             Enter your name and email to access the Wallet App and manage your
             finances.
           </p>
-          <label class="mt" for="input-name">Name:</label>
-          <input
-            placeholder="Enter your name"
-            class="mt smaller"
-            id="input-name"
-            name="input-name"
-            type="text"
-          />
-          <label class="mt" for="input-email">E-mail:</label>
-          <input
-            placeholder="email@example.com"
-            class="mt smaller"
-            id="input-email"
-            name="input-email"
-            type="text"
-          />
-          <button class="full-width mt large">Register</button>
+          <form id="form-register" class="mt">
+            <label for="input-name">Name:</label>
+            <input
+              placeholder="Enter your name"
+              class="mt smaller"
+              id="input-name"
+              name="input-name"
+              type="text"
+              required
+            />
+            <label class="mt" for="input-email">E-mail:</label>
+            <input
+              placeholder="email@example.com"
+              class="mt smaller"
+              id="input-email"
+              name="input-email"
+              type="text"
+              required
+            />
+            <button type="submit" class="full-width mt large">Register</button>
+          </form>
           <a href="../../../index.html" class="mt larger"
             >Have an account? Log in</a
           >
