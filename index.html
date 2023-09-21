@@ -9,7 +9,7 @@
     <div class="auth-container">
       <div class="auth-content">
         <div class="auth-content-container">
-          <img class="logo" src="src/img/logo.png" />
+          <img class="logo" src="src/img/logo.png" alt="Logo Wallet App" />
           <h3 class="full-width text-left mt larger">Welcome!</h3>
           <p class="mt small">
             Enter your email below to access the Wallet financial application
@@ -21,10 +21,14 @@
             class="mt smaller"
             id="input-email"
             name="input-email"
-            type="email"
+            type="text"
           />
-          <button class="full-width mt large">Log in</button>
-          <a class="mt larger">Don't have an account? Sign up</a>
+          <button onclick="onClickLogin()" class="full-width mt large">
+            Log in
+          </button>
+          <a href="src/pages/register/index.html" class="mt larger"
+            >Don't have an account? Sign up</a
+          >
         </div>
       </div>
     </div>
